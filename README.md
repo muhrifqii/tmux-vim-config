@@ -1,6 +1,8 @@
 # Tmux Configuration File
 [Tmux](https://github.com/tmux/tmux) is a terminal multiplexer (should using version 1.9 or greater). A smarter terminal that can get you away from your mouse. This article can relate why you should try to go full keyboard. This is a little article about going full keyboard [Medium.com](https://medium.com/@muhrifqii/give-it-a-chance-to-your-brain-type-without-moving-the-hands-away-from-keyboard-7790c7600c60)
 
+<img width="800" alt="This is how it looks like" src="https://raw.githubusercontent.com/muhrifqii/tmux-vim-config/master/look.png">
+
 *Prefix* mapped to `Ctrl-a` because in my opinion it's easier than the default prefix Ctrl-b.
 
 This Tmux configuration has many plugin to make you throw your mouse away. They are: 
@@ -21,25 +23,36 @@ Installation
 
 ### Option 1:
 
-  Clone the repo:
+  1. Clone the repo:
 ```bash
 git clone https://github.com/muhrifqii/tmux-vim-config
 ```
 
-  Make the `install.sh` executable:
+  2. Make the `install.sh` executable:
 ```bash
 chmod +x install.sh
 ```
 
-  Run:
+  3. Run `install.sh`
+```bash
+./install.sh
+```
+
+  4. Download Tmux Plugin Manager:
 ```bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
-  Update config:
+  5. Update tmux config:
 ```bash
 tmux source-file ~/.tmux.conf
 ```
+
+### Option 2:
+  - Just copy the desired part in this .tmux.conf on your own .tmux.conf file.
+  - Do exactly the same like the step 4 and 5 on Option 1
+
+## Try it
 
   Launch tmux:
 ```
@@ -59,9 +72,9 @@ To reattach a previous session:
 
 `tmux a -t {session-name}`
 
-To reload config file
+To reload config file inside tmux
 
-`<Control + b>:` (The default prefix key) then `source-file ~/.tmux.conf`
+`<Control + a>:` (Prefix key then `:`) then `source-file ~/.tmux.conf`
 
 Basic Commands
 --------------
@@ -69,6 +82,7 @@ Basic Commands
 In case you miss the top of README content, this configuration uses prefix key `Ctrl + a`. This prefix is a typed before any tmux shortcut sequence.
 
 * `Ctrl + a` before any command
+* `Ctrl + a` then `d` to detach session without closing it
 * `Ctrl + a` then `?` to bring up list of keyboard shortcuts
 * `Ctrl + a` then `"` to split window into view pane horizontally
 * `Ctrl + a` then `%` to split window into view pane vertically
