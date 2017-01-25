@@ -7,3 +7,7 @@
 cp .tmux.conf ~/
 cp .vimrc.conf ~/
 
+# download vim plugin manager
+echo "downloading vundle, a vim plugin manager"
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
