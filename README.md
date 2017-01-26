@@ -23,32 +23,35 @@ Installation
 
 ### Option 1:
 
-  1. Clone the repo:
+1. Clone the repo:
 ```bash
 git clone https://github.com/muhrifqii/tmux-vim-config
 ```
-
-  2. Make the `install.sh` executable:
+2. Make the `install.sh` executable:
 ```bash
 chmod +x install.sh
 ```
 
-  3. Run `install.sh`
+3. Run `install.sh`
 ```bash
 ./install.sh
 ```
 
-  4. Download Tmux Plugin Manager:
+4. Download Tmux Plugin Manager:
 ```bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
-  5. Update tmux config:
+5. Update tmux config:
 ```bash
 tmux source-file ~/.tmux.conf
 ```
 
 ### Option 2:
+  - Download Tmux Plugin Manager (only if you do not have it yet):
+```bash
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
   - Just copy the desired part in this .tmux.conf on your own .tmux.conf file.
   - Do exactly the same like the step 4 and 5 on Option 1
 
