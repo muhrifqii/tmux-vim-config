@@ -7,10 +7,13 @@
 cp .tmux.conf ~/
 cp .vimrc.conf ~/
 
-# download vim plugin manager
-echo "downloading vundle, a vim plugin manager"
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+if [ ! -f "~/.vim/bundle/Vundle.vim" ]; then
+  # download vim plugin manager
+  echo "downloading vundle, a vim plugin manager"
+  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+fi
 
-echo "downloading tpm, a tmux plugin manager"
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
+if [ ! -d "~/.tmux/plugins/tpm" ]; then
+  echo "downloading tpm, a tmux plugin manager"
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+fi
