@@ -1,12 +1,12 @@
 # Tmux Configuration File
-[Tmux](https://github.com/tmux/tmux) is a terminal multiplexer (should using version 1.9 or greater). A smarter terminal that can get you away from your mouse. This article can relate why you should try to go full keyboard. This is a little article about going full keyboard [Medium.com](https://medium.com/@muhrifqii/give-it-a-chance-to-your-brain-type-without-moving-the-hands-away-from-keyboard-7790c7600c60)
+[Tmux](https://github.com/tmux/tmux) is a terminal multiplexer. It is a smarter terminal that can let you code with minimum usage of mouse. This configuration file is valid for **Tmux version 1.9 or greater**. [This article](https://medium.com/@muhrifqii/give-it-a-chance-to-your-brain-type-without-moving-the-hands-away-from-keyboard-7790c7600c60) can relate why you should try to go full keyboard.
 
 <img width="800" alt="This is how it looks like" src="https://raw.githubusercontent.com/muhrifqii/tmux-vim-config/master/look.png">
 
 *Prefix* mapped to `Ctrl-a` because in my opinion it's easier than the default prefix Ctrl-b.
 
 This Tmux configuration has many plugin to make you throw your mouse away. They are: 
-- [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm) - The *must have* 
+- [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm) - **must have**
 - [Tmux Resurrect](https://github.com/tmux-plugins/tmux-resurrect)
 - [Tmux Online Status](https://github.com/tmux-plugins/tmux-online-status)
 - [Tmux Battery](https://github.com/tmux-plugins/tmux-battery)
