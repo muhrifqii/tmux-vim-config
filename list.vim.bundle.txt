@@ -1,0 +1,12 @@
+L9
+Vundle.vim
+base16-vim
+command-t
+seabird
+sparkup
+vim
+vim-airline
+vim-airline-themes
+vim-code-dark
+vim-fugitive
+vim-tmux-navigator
